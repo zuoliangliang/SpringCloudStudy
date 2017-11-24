@@ -1,0 +1,26 @@
+#server:
+#  port: 8881
+#spring:
+#  application:
+#    name: config-client
+#  cloud:
+#    config:
+#      label: master
+#      profile: dev
+##      uri: http://localhost:8888/
+#      discovery:
+#        enabled: true
+#        serviceId: config-server
+#eureka:
+#  client:
+#    service-url:
+#     defaultZone: http://localhost:8761/eureka
+spring:
+  rabbitmq:
+    host: 10.211.55.4
+    port: 5672
+    username: admin
+    password: admin
+management:
+  security:
+    enabled: false

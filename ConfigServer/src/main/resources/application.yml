@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    bus:
+      trace:
+       enable: true
+    config:
+      server:
+        git:
+          uri: https://github.com/zuoliangliang/SpringcloudConfig
+          search-paths: respo
+          username: xxxx
+          password: xxxx
+      label: master
+  profiles:
+    active: dev
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka/
